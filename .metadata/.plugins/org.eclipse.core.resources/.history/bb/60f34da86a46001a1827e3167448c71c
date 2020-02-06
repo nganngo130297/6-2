@@ -1,0 +1,44 @@
+package thuebao;
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		ArrayList<ThueBao> thuebao=new ArrayList<>();
+		int choose, soPhutTruyCap, soMBTruyCap;
+        Scanner scanner = new Scanner(System.in);
+        ThueBao thueBao;
+        DanhSachThueBao danhSachThueBao = new DanhSachThueBao();
+        
+        System.out.println("1. Them thue bao Dial Up");
+        System.out.println("2. Them thue bao ADSL");
+        System.out.println("3. Them thue bao T1");
+        System.out.println("4. Hien thi danh sach");
+        System.out.println("5. Tong cuoc tung loai");
+        System.out.println("6. tong all");
+        System.out.println("7.  ADSL lon nhat");
+        System.out.println("8. thoat");
+        
+        do {
+        	System.out.println("chon 1-8 :");
+        	choose=scanner.nextInt();
+        	switch(choose) {
+        	case 1:
+        		System.out.println("Nhap so phut truy cap: ");
+        		soPhutTruyCap=scanner.nextInt();
+        		thueBao= new Dial(soPhutTruyCap);
+        		thuebao.add(thueBao);
+        		System.out.println(" Them thanh cong : ");
+        		thuebao.toString();
+        		break;
+        	case 2:
+        		System.out.println("Nhap so phut truy cap: ");
+        		soPhutTruyCap=scanner.nextInt();
+        		thueBao= new Dial(soPhutTruyCap);
+        		thuebao.add(thueBao);
+        		System.out.println(" Them thanh cong: "+thuebao.toString());
+        		break;
+        		
+        	}
+        }while(true);
+	}
+}
+	

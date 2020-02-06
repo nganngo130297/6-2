@@ -1,0 +1,18 @@
+package collect;
+import java.util.*;
+public class CollectionExample4 {
+	public static void main (String[] args) {
+		List<String> a=new ArrayList<>();
+		a.add("javaa");
+		a.add("Cc");
+		a.add("Phythonn");
+		a.add("PHPP");
+		System.out.println(a);
+		Collections.sort(a, new Comparator<String>() {
+			public int compare(String s1, String s2) {
+				return s1.compareTo(s2);
+			}
+		});
+		System.out.println(a);
+	}
+}

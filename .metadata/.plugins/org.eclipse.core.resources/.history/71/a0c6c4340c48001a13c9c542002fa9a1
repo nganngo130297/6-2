@@ -1,0 +1,10 @@
+package sbb;
+import java.util.*;
+public class BufferString {
+	public static void main(String[] args) {
+		StringBuffer b= new StringBuffer("hi");
+		b.append("b");
+		System.out.println(b);
+	}
+
+}

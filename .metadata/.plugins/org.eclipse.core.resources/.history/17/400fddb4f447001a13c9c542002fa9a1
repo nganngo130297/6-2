@@ -1,0 +1,19 @@
+package collect;
+import java.util.*;
+@SuppressWarnings("unused")
+public class CollectionExample3 {
+	public static void main(String args[] ) {
+		List<String> a=new ArrayList<>();
+		a.add("java");
+		a.add("C");
+		a.add("Phython");
+		a.add("PHP");
+		System.out.println(a);
+		Collections.sort(a);
+		Collections.sort(a);
+        // show list
+        for (String element : a) {
+            System.out.print(element);
+        }
+	}
+}

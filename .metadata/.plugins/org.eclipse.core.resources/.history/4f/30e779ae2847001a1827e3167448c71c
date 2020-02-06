@@ -1,0 +1,20 @@
+package set;
+import java.util.*;
+public class TongHopSet {
+	public static void main(String[] args) {
+		String ten;
+		Set<String> l= new HashSet<>();
+		Set<String> l2= new HashSet<>();
+		Iterator<String> iterator = l.iterator();
+		l.add("1");
+		l.add("2");
+		l.add("3");
+		l.add("4");
+		l.add("5");
+	
+		while (iterator.hasNext()) {
+	        System.out.println(iterator.next());
+		}
+	}
+}
+	

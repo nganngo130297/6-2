@@ -1,0 +1,17 @@
+package btmap;
+import java.util.*;
+@SuppressWarnings("unused")
+public class BaitapMap {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int so;
+		Map<Integer, Integer> m1=new HashMap<>();
+		Map<Integer, Integer> m2=new HashMap<>();
+		do {
+			System.out.println("Nhap day so tu ban phim: ");
+			so=scanner.nextInt();
+		}while(so!=0);
+	}
+
+}

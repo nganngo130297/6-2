@@ -1,0 +1,34 @@
+package truutuong;
+import java.util.*;
+@SuppressWarnings("unused")
+
+public class DanhSachHinh {
+	ArrayList<HinhHoc> arrHinh;
+	
+	public DanhSachHinh() {
+        arrHinh = new ArrayList<>();
+        arrHinh.add(new HinhChuNhat(7, 3));
+        arrHinh.add(new HinhTron(3));
+        arrHinh.add(new HinhChuNhat(10, 1));
+	}
+	
+	public void themHinh(HinhHoc hinhHoc) {
+        arrHinh.add(hinhHoc);
+    }
+	public void tongsoHCN() {
+		for(int i=0;i<arrHinh.size();i++) {
+			if(arrHinh.get(i).)
+		}
+	}
+     
+    public int hienThiDanhSachHinh() {
+    	int soHinhChuNhat = 0;
+        for (HinhHoc hinhHoc : arrHinh) {
+            if (hinhHoc instanceof HinhChuNhat) {
+                soHinhChuNhat++;
+            }
+        }
+        return soHinhChuNhat;
+    }
+}
+

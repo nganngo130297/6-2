@@ -1,0 +1,16 @@
+package giaodien;
+public class Student implements GiaoDien {
+
+	@Override
+	public void nhap() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void hienThi() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

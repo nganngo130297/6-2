@@ -1,0 +1,12 @@
+package collect;
+import java.util.*;
+public class CollectionExample4 {
+	public void main (String[] args) {
+		List<String> a=new ArrayList<>();
+		a.add("javaa");
+		a.add("Cc");
+		a.add("Phythonn");
+		a.add("PHPP");
+		System.out.println(a);
+	}
+}

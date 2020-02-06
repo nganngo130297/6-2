@@ -1,0 +1,38 @@
+package first_project;
+import java.util.Scanner;
+public class hinhChuNhat {
+	private double dai;
+	private double rong;
+	
+	public void nhap() {
+		Scanner scanner= new Scanner(System.in);
+		System.out.println("Nhap chieu dai: ");
+		dai=scanner.nextDouble();
+		do {
+			System.out.println("Nhap chieu rong");
+			rong=scanner.nextDouble();
+		}while(dai<rong);
+	
+	}
+	public void hienThi(double chieuDai,double chieuRong) {
+		System.out.println("Chieu dai:"+chieuDai+", chieu rong: "+chieuRong);
+	}
+	public double tinhChuVi(double chieuDai, double chieuRong) {
+		return (chieuDai+chieuRong)*2;
+	}
+	public double tinhDienTich(double chieuDai, double chieuRong) {
+		return chieuDai*chieuRong;
+	}
+	public void hienthiChuviDienthich(double tinhChuVi, double tinhDienTich) {
+		System.out.println("Chu vi la: "+tinhChuVi+", dien tich la: "+tinhDienTich);
+	}
+	
+	public static void main(String[] args ) {
+		hinhChuNhat a= new hinhChuNhat();
+		a.nhap();
+		a.hienThi(a.dai, a.rong);
+		a.hienthiChuviDienthich(a.tinhChuVi(a.dai, a.rong), a.tinhDienTich(a.dai, a.rong));
+
+	}
+
+}

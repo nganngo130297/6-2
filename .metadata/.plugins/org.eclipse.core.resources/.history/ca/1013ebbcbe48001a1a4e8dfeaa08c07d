@@ -1,0 +1,18 @@
+package sbb;
+import java.util.*;
+public class GFG1 {
+
+	public static void main(String[] args) {
+		StringBuilder str2= new StringBuilder("AABBCC");
+		System.out.println(str2.toString());
+		StringBuilder str= str2.reverse();
+		System.out.println(str.toString());// dao chuoi
+		str.appendCodePoint(44);int cap=str2.capacity();
+		System.out.println(str);
+		
+		System.out.println(cap);
+		
+		
+		}
+
+}

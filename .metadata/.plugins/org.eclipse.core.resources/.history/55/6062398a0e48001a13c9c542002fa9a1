@@ -1,0 +1,17 @@
+package baitap;
+import java.io.*;
+@SuppressWarnings("unused")
+public class docfile {
+	public static void main(String args[]) throws Exception{
+		FileReader f= new FileReader("D:\\note.txt");
+		BufferedReader br = new BufferedReader(f);
+		
+		int i;
+		while ((i=br.read())!=-1) {
+			System.out.println((char)i);
+			
+		}
+		br.close();
+		f.close();
+	}
+}

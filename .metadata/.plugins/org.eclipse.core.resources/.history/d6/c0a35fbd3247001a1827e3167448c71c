@@ -1,0 +1,23 @@
+package btmap;
+import java.util.*;
+@SuppressWarnings("unused")
+public class BaitapMap {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int so;
+		Map<Integer, Integer> m1=new TreeMap<>();
+		System.out.println("Nhap day so tu ban phim: ");
+		while((so=scanner.nextInt())!=0) {
+			if(!m1.containsKey(so)) {
+				m1.put(so, 1);
+			}
+			else {
+                m1.put(so, m1.get(so) + 1);
+            }
+		}
+		//Set<Map.Entry<Integer, Integer>> a = m1.entrySet();
+		 System.out.println(m1);
+	}
+
+}

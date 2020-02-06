@@ -1,0 +1,25 @@
+package first_project;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class NhanVien {
+	private String hoTen,soDienthoai,ketQua, thongTin;
+	ArrayList<String> nv= new ArrayList<>(3);
+	
+	public void nhap() {
+		Scanner scanner= new Scanner(System.in); 
+		System.out.println("Nhap vao 3 nan vien");
+		for(int i=0;i<=3;i++) {
+			System.out.println("Nhan vien thu"+(i+1));
+			hoTen=scanner.nextLine();
+			System.out.println("So dien thoai");
+			soDienthoai=scanner.nextLine();
+			thongTin = hoTen + "\t" + soDienthoai;
+			nv.add(thongTin);
+		}
+	}
+	public static void main(String[] args) {
+		NhanVien n=new NhanVien();
+		n.nhap();
+	}
+}

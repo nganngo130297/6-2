@@ -1,0 +1,17 @@
+package vidu;
+import java.io.*;
+@SuppressWarnings("unused")
+public class WriteObjectDemo {
+	public static void main(String[] args) throws FileNotFoundException, IOException{
+		ObjectOutputStream o= new ObjectOutputStream(new FileOutputStream(new File("C:/Users/ntngan/eclipse-workspace/test/src/vidu/Customer.dat")));
+		Customer c= new Customer();
+		c.setId(1);
+		c.setName("ngan");
+		c.setAddress("can tho");
+		
+		System.out.println("Befor");
+		System.out.println(c);
+		o.writeObject(c);
+		o.close();
+	}
+} 

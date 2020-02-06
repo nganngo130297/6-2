@@ -1,0 +1,12 @@
+package vidu;
+import java.io.*;
+public class ReadObjectDemo {
+	public static void main(String[] args) throws FileNotFoundException,IOException,ClassNotFoundException{
+	ObjectInputStream i= new ObjectInputStream(new FileInputStream(new File("C:/Users/ntngan/eclipse-workspace/test/src/vidu/Customer.java")))	;
+	System.out.println("After");
+	Customer c= (Customer) i.readObject();
+	System.out.println(c);
+	i.close();
+	
+}
+}

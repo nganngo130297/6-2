@@ -1,0 +1,11 @@
+package baitap;
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	Shape s1 = new Circle(5.5, "RED", false);  // khoi tao, gan gia tri doi tuong shape voi vai tro la hinh tron.
+	//System.out.println(s1); 
+	//System.out.println(s1.getArea()); //lay gia tri trong phuong thuc getArea cua Circle
+	//System.out.println(s1.getPerimeter()); //lay gia tri trong phuong thuc getPerimeter cua Circle
+	System.out.println(s1.getColor()); // lay gia tri "RED" tu getcolor cua shape
+	}
+}

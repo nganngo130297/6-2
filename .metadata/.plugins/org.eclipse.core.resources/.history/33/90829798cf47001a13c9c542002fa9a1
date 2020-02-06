@@ -1,0 +1,29 @@
+package baitap;
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	Shape s1 = new Circle(5.5, "RED", false);  // khoi tao, gan gia tri doi tuong shape voi vai tro la hinh tron.
+	//System.out.println(s1); 
+	//System.out.println(s1.getArea()); //lay gia tri trong phuong thuc getArea cua Circle
+	//System.out.println(s1.getPerimeter()); //lay gia tri trong phuong thuc getPerimeter cua Circle
+	//System.out.println(s1.getColor()); // lay gia tri "RED" tu getcolor cua shape
+	//System.out.println(s1.isFilled());// lay gia tri "RED" tu isfill cua shape
+	//System.out.println(s1.getRadius());// s1 khai bao shape, khong co ham get Radius.
+	
+	Circle c1 = (Circle)s1; //ep kieu s1 ve thanh circle
+	//System.out.println(c1); 
+	//System.out.println(c1.getArea());// goi ham getArea cua circle
+	//System.out.println(c1.getPerimeter()); // goi ham getPerimeter cua circle
+	//System.out.println(c1.getColor());
+	//System.out.println(c1.isFilled());
+	//System.out.println(c1.getRadius());
+	
+	//Shape s2 = new Shape();// shape la lop truu tuong ne k the kho tao doi tuong
+	Shape s3 = new Rectangle(1.0, 2.0, "RED", false); 
+	//System.out.println(s3);
+	//System.out.println(s3.getArea()); // lay gia tri trong getArea cua REC
+	//System.out.println(s3.getPerimeter());// lay gia tri trong getPerimeter cua REC
+	System.out.println(s3.getColor());
+	//System.out.println(s3.getLength());
+	}
+}

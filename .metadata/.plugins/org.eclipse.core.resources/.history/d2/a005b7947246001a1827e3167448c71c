@@ -1,0 +1,50 @@
+package thuebao;
+import java.util.*;
+public class DanhSachThueBao {
+	ArrayList<ThueBao> arrthuebao=new ArrayList<>();
+	long tongDial=0,tongAD=0,tongT=0;
+	
+	public DanhSachThueBao() {
+		super();
+	}
+	public void them(ThueBao thuebao) {
+		arrthuebao.add(thuebao);
+	}
+	public void hienthi() {
+		for(int i=0;i<arrthuebao.size();i++) {
+			//System.out.println(arrthuebao.get(i).toString());
+			System.out.println("fs");
+		}
+	}
+	public void tongcuoc() {
+		for(ThueBao thuebao : arrthuebao) {
+			if(thuebao instanceof Dial) {
+				tongDial+=thuebao.tinhTien();
+			}
+			else if(thuebao instanceof ADSL) {
+				tongAD+=thuebao.tinhTien();
+			}
+			else tongT+=thuebao.tinhTien();
+		}
+	}
+	public void tong() {
+		long tong=tongDial+tongAD+tongT;
+		System.out.println("tong cua tat ca cac thue bao la: "+tong);
+	}
+	public void lonnhat() {
+		long max = 0;
+		ADSL thueBaoADSL = new ADSL();
+		for(ThueBao thuebao: arrthuebao) {
+			if(thuebao instanceof ADSL) {
+				if(thuebao.tinhTien()>max)
+					max=thuebao.tinhTien();
+					thueBaoADSL = (ADSL) thuebao;
+			}
+		}
+		System.out.println("Thue bao co tien lon nhat la: " +thueBaoADSL.toString());
+	}
+	
+	
+	
+	
+}

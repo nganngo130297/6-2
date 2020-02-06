@@ -1,0 +1,37 @@
+package truutuong;
+import java.util.*;
+@SuppressWarnings("unused")
+public class HinhChuNhat extends HinhHoc{
+	int dai;
+	int rong;
+	
+	public HinhChuNhat() {
+		super();
+	}
+	public HinhChuNhat(int dai, int rong) {
+		super();
+		this.dai = dai;
+		this.rong = rong;
+	}
+	public int getDai() {
+		return dai;
+	}
+	public void setDai(int dai) {
+		this.dai = dai;
+	}
+	public int getRong() {
+		return rong;
+	}
+	public void setRong(int rong) {
+		this.rong = rong;
+	}
+	@Override
+	public double tinhDienTich() {
+		return dai*rong;
+	}
+	public String toString() {
+		return "Dien tich hinh chu nhat"+tinhDienTich();
+	}
+	
+
+}

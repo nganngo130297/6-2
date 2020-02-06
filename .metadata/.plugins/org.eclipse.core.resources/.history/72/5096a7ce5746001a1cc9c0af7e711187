@@ -1,0 +1,7 @@
+package thuebao;
+import java.util.*;
+@SuppressWarnings("unused")
+public abstract class ThueBao {
+	
+	public abstract int tinhTien();
+}

@@ -1,0 +1,52 @@
+package truutuong;
+import java.util.*;
+@SuppressWarnings("unused")
+public class Main {
+	public static void main(String[] args) {
+		int choose, chieuDai, chieuRong, banKinh;
+	        @SuppressWarnings("resource")
+			Scanner scanner = new Scanner(System.in);
+	        HinhHoc hinhHoc;
+	        DanhSachHinh danhSachHinh = new DanhSachHinh();
+	      
+	        System.out.println("1. them hinh chu nhat");
+	        System.out.println("2. them hinh tron");
+	        System.out.println("3. hien thi danh sach hinh");
+	        System.out.println("4. dem so hinh chu nhat");
+	        System.out.println("5. hien thi hinh chu nhat co dien tich lon nhat");
+	        System.out.println("6. thoat");
+	        
+	        do {
+	        	System.out.println("Chon mot chuc nang");
+	        	int chon=scanner.nextInt();
+	        	switch(chon){
+	        		case 1:
+	        			Random random = new Random();
+	                    do {
+	                        chieuDai = random.nextInt(5) + 1;   
+	                        chieuRong = random.nextInt(5) + 1;
+	                    } while (chieuDai <= chieuRong); 
+	                    hinhHoc = new HinhChuNhat(chieuDai, chieuRong);
+	                    danhSachHinh.themHinh(hinhHoc);
+	                    System.out.println("them thanh cong hinh chu nhat co chieu dai = " + chieuDai + 
+	                        ", chieu rong = " + chieuRong);
+	                    break;
+	        		case 2:
+	        			Random random2 = new Random();
+	                    banKinh = random2.nextInt(5) + 1; 
+	                    hinhHoc = new HinhTron(banKinh);
+	                    danhSachHinh.themHinh(hinhHoc);
+	                    System.out.println("them thanh cong hinh tron co ban kinh = " + banKinh) ;
+	                    break;
+	        		case 3:
+	        			System.out.println("thong tin cac hinh co trong danh sach:  ");
+	                    danhSachHinh.hienThiDanhSachHinh();
+	        			break;
+	        		case 4:
+	        			System.out.println("tong so cac hinh chu nhat da co :  ");
+	        			danhSachHinh.tongsoHCN();
+	        			break;
+	        	}
+	        }while(true);
+	      }
+}

@@ -1,0 +1,46 @@
+package truutuong;
+import java.util.*;
+@SuppressWarnings("unused")
+
+public class DanhSachHinh {
+	ArrayList<HinhHoc> arrHinh;
+	
+	public DanhSachHinh() {
+        arrHinh = new ArrayList<>();
+        arrHinh.add(new HinhChuNhat(7, 3));
+        arrHinh.add(new HinhTron(3));
+        arrHinh.add(new HinhChuNhat(10, 1));
+	}
+	
+	public void themHinh(HinhHoc hinhHoc) {
+        arrHinh.add(hinhHoc);
+    }
+	public int tongsoHCN() {
+		int soHinhChuNhat = 0;
+        for (HinhHoc hinhHoc : arrHinh) {
+            if (hinhHoc instanceof HinhChuNhat) {
+                soHinhChuNhat++;
+            }
+        }
+        return soHinhChuNhat;
+	}
+	public void lonnhat() {
+		double max=0;
+		 HinhChuNhat hinhChuNhat = new HinhChuNhat();
+		for (HinhHoc hinhHoc : arrHinh) {
+            if (hinhHoc instanceof HinhChuNhat) {
+            	if(hinhHoc.tinhDienTich()>max) {
+            		max=hinhHoc.tinhDienTich(); 
+            		hinhChuNhat = (HinhChuNhat) hinhHoc;
+            	} 
+            }
+        }
+	}
+     
+    public void hienThiDanhSachHinh() {
+        for (int i = 0; i < arrHinh.size(); i++) {
+            System.out.println(arrHinh.get(i).toString());
+        }
+    }
+}
+

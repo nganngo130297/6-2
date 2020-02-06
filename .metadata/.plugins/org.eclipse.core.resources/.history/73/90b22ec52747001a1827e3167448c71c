@@ -1,0 +1,16 @@
+package set;
+import java.util.*;
+public class TongHopSet {
+	public static void man(String[] args) {
+		Set<String> l= new HashSet<>();
+		Set<String> l2= new HashSet<>();
+		l.add("1");
+		l.add("2");
+		l.add("3");
+		l.add("4");
+		l.add("5");
+		for(int i=0;i<l.size();i++) {
+		System.out.println(l.get(i));
+		}
+	}
+}

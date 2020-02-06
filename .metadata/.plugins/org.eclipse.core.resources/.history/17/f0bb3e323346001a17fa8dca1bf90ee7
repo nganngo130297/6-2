@@ -1,0 +1,29 @@
+package truutuong;
+import java.util.*;
+@SuppressWarnings("unused")
+public class HinhTron extends HinhHoc{
+	int banKinh;
+	
+	public HinhTron() {
+		super();
+	}
+	public HinhTron(int banKinh) {
+		super();
+		this.banKinh = banKinh;
+	}
+	public int getBanKinh() {
+		return banKinh;
+	}
+	public void setBanKinh(int banKinh) {
+		this.banKinh = banKinh;
+	}
+	
+	@Override
+	public double tinhDienTich() {
+		double dienTich= banKinh*banKinh*3.14;
+		return dienTich;
+	}
+	public String toString() {
+		return "Dien tich hinh tron"+tinhDienTich();
+	}
+}

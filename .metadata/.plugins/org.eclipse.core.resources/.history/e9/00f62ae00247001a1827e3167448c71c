@@ -1,0 +1,22 @@
+package giaodien;
+
+public class Main implements GiaoDien {
+
+	@Override
+	public void nhap() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void hienThi() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package set;
+import java.util.*;
+@SuppressWarnings("unused")
+public class Set {
+	public static void man(String[] args) {
+		Set<String> l= new HashSet<>();
+		
+	}
+	
+	
+}

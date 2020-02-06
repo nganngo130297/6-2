@@ -1,0 +1,16 @@
+package sbb;
+import java.io.*;
+import java.nio.*;
+public class CountLetter {
+	private char kitu;
+	private Path file;
+	
+	public CountLetter(char kitu, Path file) {
+		super();
+		this.kitu = kitu;
+		this.file = file;
+	}
+
+	
+	
+}

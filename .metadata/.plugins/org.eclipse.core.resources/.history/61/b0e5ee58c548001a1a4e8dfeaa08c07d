@@ -1,0 +1,46 @@
+package sbb;
+import java.io.*;
+import java.nio.file.*; //khai bao mot thuoc tinh kiu path
+public class CountLetter {
+	private char kitu;
+	private Path file;
+	
+	public CountLetter(char kitu, Path file) {
+		super();
+		this.kitu = kitu;
+		this.file = file;
+	}
+	public int count() {
+		int count=0;
+		InputStream i;
+		try {
+		InputStream in=Files.newInputStream(file);
+		BufferedReader b= new BufferedReader(new InputStreamReader(i));
+		{
+		String line=null;
+		while((line=b.readLine())!=null) {
+			for(int e=0;e<line.length();e++) {
+				if(kitu==line.charAt(e))
+					count+=1;
+			}
+		}
+	}
+}catch(IOException x) {
+	System.err.println(x);
+}
+		
+		return count;
+	}
+	public static void main(String[] args) {
+		/*if(args.length!=1|| args[0].length()!=1) {
+			
+		}*/
+		char a=args[0].charAt(0);
+		Path p=Paths.get("C:/Users/ntngan/Desktop/note.txt");
+		int count=new CountLetter(a,p).count();
+		System.out.format("File '%s' has %d instances of letter '%c'.%n" ,p,count,a);
+	}
+
+	
+	
+}

@@ -1,0 +1,20 @@
+package vidu;
+import java.util.*;
+public class equa {
+	    private String firstName;
+	    
+	    public String getFirstName() {
+	        return firstName;
+	    }
+	 
+	    public void setFirstName(String firstName) {
+	        this.firstName = firstName;
+	    }
+	public static void main( String[] args) {
+		equa e= new equa();
+		e.setFirstName("a");
+		equa e1= new equa();
+		e1.setFirstName("a");
+		System.out.println(e1.equals(e));
+	}
+}

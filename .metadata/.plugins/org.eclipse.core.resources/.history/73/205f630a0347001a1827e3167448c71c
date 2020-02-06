@@ -1,0 +1,24 @@
+package giaodien;
+
+public class Main implements Student {
+
+	@Override
+	public void nhap() {
+		System.out.println("nhap");
+	}
+
+	@Override
+	public void hienThi() {
+		System.out.println("hien thi");
+
+	}
+
+	public static void main(String[] args) {
+		Main demo=new Main();
+		demo.nhap();
+		demo.hienThi();
+		demo.nhapDiem();
+	}
+
+
+}

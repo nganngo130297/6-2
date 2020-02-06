@@ -1,0 +1,12 @@
+package collect;
+import java.util.*;
+@SuppressWarnings("unused")
+public class CollectionExample5 {
+	public static void main(String[] args) {
+		List<Student> a=new ArrayList<>();
+			a.add(new Student(1,"Ngan",4,"Soc Trang"));
+			a.add(new Student(1,"Anh",4,"Can Tho"));
+			a.add(new Student(1,"Huynh",4,"Vinh Long"));
+			
+		}
+}
